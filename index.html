@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>eShop | Documentation</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="eRestro Documentation">
+    <meta name="author" content="eRestro Documentation">
+    <link rel="shortcut icon" href="assets/images/logo/eshop_vendor_fav.png">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+    <style>
+        .image-doc {
+            width: 100%;
+            height: 400px;
+            object-fit: contain;
+        }
+
+        .twenty {
+            height: 20px;
+        }
+
+        .title-img {
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body class="docs-page">
+    <header class="header fixed-top">
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+                    <button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+                        type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="site-logo"><a class="navbar-brand" href="#section-1"><img class="logo-icon me-2"
+                      src="assets/images/logo/logo.png" alt="logo"><span class="logo-text"><span
+                     class="text-alt">Web Documentation</span></span></a></div>
+
+                </div>
+            </div>
+            <!--//container-->
+        </div>
+        <!--//branding-->
+    </header>
+
+
+
+    <div class="docs-wrapper">
+        <div id="docs-sidebar" class="docs-sidebar">
+            <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+                    <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+                    <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <nav id="docs-nav" class="docs-nav navbar">
+                <ul class="section-items list-unstyled nav flex-column pb-3">
+
+
+                    <!-- Introduction -->
+                    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span
+                                class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Introduction</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1"><img
+                                src="assets/images/logo/eshop_vendor_fav.png" class="twenty" alt="">&nbsp; What is eShop?</a>
+                    </li>
+
+
+                     <!-- Firebase -->
+                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2">
+                        <span class="theme-icon-holder me-2"><svg class="svg-inline--fa fa-file fa-w-12" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="file" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"></path></svg><!-- <i class="fa fa-file"></i> Font Awesome fontawesome.com --></span>Firebase
+                        Configuration</a>
+                     </li>
+
+                    <!-- Installation -->
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3">
+                            <span class="theme-icon-holder me-2"><i
+                                    class="fas fa-arrow-down"></i></span>Installation</a>
+                    </li>
+
+                    <!-- Deployment -->
+                    <li class="nav-item section-title"><a class="nav-link scrollto" href="#section-4">
+                        <span class="theme-icon-holder me-2"><i class="fas fa-rocket"></i></span>Deployment</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-11-2"><i class="fas fa-cog"></i> &nbsp;
+                          Method 1</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-11-3"><i class="fas fa-cog"></i> &nbsp;
+                       Method 2</a>
+                    </li>
+                      
+              
+                  <!-- System Configuration -->
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span
+                                class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>System Configuration</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1"><i class="fas fa-paint-brush"></i> &nbsp; Theme Config</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2"><i class="fas fa-language"></i> &nbsp; Create your own Language</a></li>
+
+
+
+                    
+                     
+
+                     
+                    <!-- Pages Info -->
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span
+                                class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Pages Info</a></li>
+                    <!-- Support -->
+                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span
+                        class="theme-icon-holder me-2"><i class="fas fa-headset"></i></span>Support</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    
+        <div class="docs-content">
+            <div class="container">
+
+                <!-- Introduction -->
+                    <article class="docs-article" id="section-1">
+                        <header class="docs-header">
+                            <h1 class="docs-heading">Introduction
+                            </h1> 
+                        </header>
+                        <section class="docs-section" id="item-1-1">
+
+                            <h2 class="section-heading">What is eShop?</h2>
+                            <p><strong>eShop</strong> is a powerful multi-vendor e-commerce platform that unites multiple sellers under a single, seamless digital marketplace. Designed to foster collaboration and innovation, <strong>eShop</strong> enables vendors to showcase their products, reach a wider audience, and grow their businesses, all while providing customers with a unified shopping experience.</p>
+                            <p>With <strong>eShop</strong>, sellers can join forces to create a diverse and thriving online marketplace where customers can explore a wide range of products from different vendors, all in one place. Our platform streamlines operations, allowing vendors to manage their own storefronts, inventory, and orders while benefiting from shared resources, integrated payment systems, and centralized customer management.</p>            
+                            <p>Whether you’re a small business owner or an established seller, <strong>eShop</strong> is your gateway to a scalable and collaborative e-commerce ecosystem that supports growth, enhances customer satisfaction, and drives success for everyone involved.</p>
+                        </section>
+                    </article>
+                        
+
+                      <!-- Firebase Configuration -->
+                    <article class="docs-article active" id="section-2">
+                        <header class="docs-header">
+                            <h2 class="section-heading">Configure the firebase setup for login web version
+                            </h2>
+                            <section class="docs-intro" id="item-6-0">
+        
+                                <div class="callout-block callout-block-info"> <div class="content">
+                                        <h4 class="callout-title">
+                                            <span class="callout-icon-holder
+                                        mr-1">
+                                                <svg class="svg-inline--fa
+                                        fa-info-circle fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                                    <path fill="currentColor" d="M256 8C119.043 8 8
+                                            119.083 8 256c0 136.997
+                                            111.043 248 248
+                                            248s248-111.003
+                                            248-248C504 119.083
+                                            392.957 8 256 8zm0
+                                            110c23.196 0 42 18.804
+                                            42 42s-18.804 42-42
+                                            42-42-18.804-42-42
+                                            18.804-42 42-42zm56
+                                            254c0 6.627-5.373 12-12
+                                            12h-88c-6.627
+                                            0-12-5.373-12-12v-24c0-6.627
+                                            5.373-12
+                                            12-12h12v-64h-12c-6.627
+                                            0-12-5.373-12-12v-24c0-6.627
+                                            5.373-12 12-12h64c6.627
+                                            0 12 5.373 12
+                                            12v100h12c6.627 0 12
+                                            5.373 12 12v24z"></path>
+                                                </svg>
+                                                <!-- <i class="fas fa-info-circle"></i> Font Awesome fontawesome.com -->
+                                            </span>
+                           
+                                            Note
+                                        </h4>
+                                        <p>if you are already set up the firebase for then you can skip this step.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="callout-block callout-block-info">
+                                    <div class="content">
+                                        <h4 class="callout-title">
+                                            <span class="callout-icon-holder
+                                        mr-1">
+                                                <svg class="svg-inline--fa
+                                        fa-info-circle fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                                    <path fill="currentColor" d="M256 8C119.043 8 8
+                                            119.083 8 256c0 136.997
+                                            111.043 248 248
+                                            248s248-111.003
+                                            248-248C504 119.083
+                                            392.957 8 256 8zm0
+                                            110c23.196 0 42 18.804
+                                            42 42s-18.804 42-42
+                                            42-42-18.804-42-42
+                                            18.804-42 42-42zm56
+                                            254c0 6.627-5.373 12-12
+                                            12h-88c-6.627
+                                            0-12-5.373-12-12v-24c0-6.627
+                                            5.373-12
+                                            12-12h12v-64h-12c-6.627
+                                            0-12-5.373-12-12v-24c0-6.627
+                                            5.373-12 12-12h64c6.627
+                                            0 12 5.373 12
+                                            12v100h12c6.627 0 12
+                                            5.373 12 12v24z"></path>
+                                                </svg>
+                                                <!-- <i class="fas fa-info-circle"></i> Font Awesome fontawesome.com -->
+                                            </span>
+                           
+                                            Note
+                                        </h4>
+                                        <p>This step is very much important for web version login and register feature to
+                                            work. So please follow the below steps carefully.
+                                        </p>
+                                    </div>
+                                </div>
+                                <h6 class="section-heading">1. Create Firebase Project</h6>
+                                <p>1. Go to &gt;&gt; Firebase console &lt;&lt; .</p>
+                                        <p>2. Register a new account or try to log in with existing google accout.</p>
+                                        <img src="./assets/images/firebase/f-1.png"><br><br>
+        
+                                        <p>3. Once logged in, you can see firebase console dashboard. Click on Add Project.
+                                            Provide a project name, and then select country and then after that click on
+                                            Create Project. For example, see the below image</p>
+                                        <img src="./assets/images/firebase/f-2.png"><br><br>
+                                        <img src="./assets/images/firebase/f-3.png"><br><br>
+                                        <p>4. Once the project has been created, it will automatically redirect to Firebase
+                                            dashboard screen.</p>
+                                        <img src="./assets/images/firebase/f-4.png"><br><br>
+                                        <p>5. As eRestro(Web version) is a web project, you need to add web
+                                            project/application to the firebase project.</p>
+                                        <img src="./assets/images/firebase/f-5.png"><br><br>
+                                        <p>6. Go to Authentication and open " Sign-in method " Tab</p>
+                                        <img src="./assets/images/firebase/f-6.png" width="1000px"><br><br>
+                                        <p>7. Now at the bottom of the page, in "Authorized domains", localhost and a
+                                            Firebase domain are automatically added. Here we've to add domain name without
+                                            http:// and https:// whever eRestro Front End(Web Version) Website will get
+                                            hosted. If you're using www as prefix of domain name then you must have to add
+                                            that.</p>
+                                        <p>8. Now add your domain with www. as prefix like www.myeRestro.com</p>
+                                        <img src="./assets/images/firebase/f-7.png" width="1000px"><br><br>
+                                        <p>9. Go to Project settings in firebase dashboard option.</p>
+                                        <img src="./assets/images/firebase/f-8.png" width="1000px"><br><br>
+                                        <p>10. Go to Project settings and scroll down you will find created web App there
+                                            you find config option that will have firebase settings for front end.</p>
+                                        <p>11. here you have to set all details except the two fields 1. databaseURL &amp; 2.
+                                            measurementId. Here you can set only test word.</p>
+                                        <img src="./assets/images/firebase/f-9.png" width="1000px"><br><br>
+                                        <p>12. You need to set this details in eRestro admin panel -&gt; Web Settings page from
+                                            this Project settings page in firebase dashboard option</p>
+                                        <img src="./assets/images/vscode/vs-3.png" width="1000px">
+                            </section>
+                        </header>
+                     </article>
+                <!-- Installation -->
+                    <article class="docs-article" id="section-3">
+                        <header class="docs-header">
+                            <h1 class="docs-heading">Installation</h1>
+                            <section class="docs-intro">
+                                <div class="callout-block callout-block-info">
+                                    <div class="content">
+                                        <h4 class="callout-title">
+                                            <span class="callout-icon-holder me-1">
+                                                <svg class="svg-inline--fa fa-info-circle fa-w-16" aria-hidden="true"
+                                                    focusable="false" data-prefix="fas" data-icon="info-circle" role="img"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+                                                    </path>
+                                                </svg>
+    
+                                            </span>
+                                            Note
+                                        </h4>
+                                        <p>Before Web Installation we Recommended to setup the <strong> Admin Panel</strong> First.</p>
+                                    </div>
+                                </div>
+                                <p>
+                                <ol>
+                                    <li>
+                                        Open <strong>Web Code</strong> in your Vs Code Editor- see its looks like below image
+                                    </li>
+                                    <div class="simplelightbox-gallery">
+                                        <a href="assets/images/vscode/vs-1.png">
+                                            <img src="assets/images/vscode/vs-1.png" class="image-doc">
+                                        </a>
+                                    </div>
+                                    <li>
+                                        Click to <strong>.env </strong> File
+                                    </li>
+                                    <div class="simplelightbox-gallery">
+                                        <a href="assets/images/vscode/vs-2.png">
+
+                                            <img src="assets/images/vscode/vs-2.png" class="image-doc">
+                                        </a>
+                                    </div>
+                                    <li>
+                                        Fill <strong>.env </strong> File From your admin Panel
+                                    </li>
+                                    <div class="simplelightbox-gallery">
+                                        <a href="assets/images/vscode/vs-3.png">
+                                            <img src="assets/images/vscode/vs-3.png" class="image-doc">
+                                        </a>                             
+                                    </div>
+                                    <div class="simplelightbox-gallery">             
+                                        <a href="assets/images/vscode/vs-4.png">
+                                        <img src="assets/images/vscode/vs-4.png" class="image-doc">
+                                        </a>
+                                    </div>
+                                    <li>
+                                        Also fill the <strong>firebase-messaging-sw.js</strong> file for Notification
+                                    </li>
+                                    <div class="simplelightbox-gallery">
+                                        <a href="assets/images/vscode/vs-5.png">
+                                            <img src="assets/images/vscode/vs-5.png" class="image-doc">
+                                        </a>
+                                    </div>
+                                    <li>
+                                    Then Open <strong>Terminal</strong> by Click on Terminal then in menu <strong>New Terminal</strong> 
+                                    </li>
+                                    <div class="simplelightbox-gallery">
+                                        <a href="assets/images/vscode/vs-6.png">
+
+                                            <img src="assets/images/vscode/vs-6.png" class="image-doc">
+                                        </a>
+                                    </div>
+                                    <li>
+                                        Then check the Node js is Installed or not by write <Strong>node -v</Strong> Command and then enter.
+                                    </li>
+                                    <div class="simplelightbox-gallery">
+                                        <a href="assets/images/vscode/vs-7.png">
+                                            <img src="assets/images/vscode/vs-7.png" class="image-doc">
+                                        </a>
+                                    </div>
+                                    <li>
+                                        If you do not see the version of Node.js, that means Node.js is not installed on your system. For Node.js installation,
+                                    </li>
+                                    <ul>
+                                        <li>
+                                            click on this <a href="https://youtu.be/4FAtFwKVhn0?si=RamJTp9Pj1g5XFWW" target="_blank"><b>Link</b></a> for Windows.
+                                        </li>
+                                        <li>
+                                            click on this <a href="https://youtu.be/l53HbzbSwxQ?si=1JqMaFGULdW9-_XX" target="_blank"><b>Link</b></a> for Mac.
+                                        </li>
+                                    </ul>
+                                    <ul>After Installation Version is Show Below like Image its shows <strong>Latest Version </strong> which you are installed</ul>
+                                    <div class="simplelightbox-gallery">
+                                        <a href="assets/images/vscode/vs-8.png">
+                                            <img src="assets/images/vscode/vs-8.png" class="image-doc">
+                                        </a>
+                                    </div>
+                                    <li>
+                                        After successfully Installed node js , we are able to run in our local server.
+                                    </li>
+                                    <ul>
+                                        <li>
+                                        To Run Web in our Local server we Need to install the node_modules folder 
+                                        </li>
+                                        <li>
+                                            For Install node_modules Folder Run command <strong>npm install</strong>, this command will Take Around 5-10 minutes based on System Speed.
+                                        </li>
+                                        <li>
+                                            After the Command we can see node_modules Folder are shown in our project hierarchy.
+                                        </li>
+                                    </ul>
+                                    <div class="simplelightbox-gallery">
+                                        <a href="assets/images/vscode/vs-9.png">
+                                            <img src="assets/images/vscode/vs-9.png" class="image-doc">
+                                        </a>
+                                    </div>
+                                    <li>
+                                        After Successfully installed node_modules folder , Now we are able to run Web in our local server.
+                                    </li>
+                                    <ul>
+                                        <li>
+                                        To Run Web in our Local server run command <strong>npm run dev</strong> 
+                                        </li>
+                                        <li>
+                                            After That you can see our web is running in localhost:3000  which is our local server
+                                        </li>
+                                        <li>
+                                            Go to Browser and Enter that link and you see code is compiling after compilation you can see Website on localhost:3000
+                                        </li>
+                                    </ul>
+                                    <div class="simplelightbox-gallery">
+                                        <a href="assets/images/vscode/vs-10.png">
+                                            <img src="assets/images/vscode/vs-10.png" class="image-doc">
+                                        </a>
+                                    </div>
+                                    <li>
+                                        In Browser ,Now we can see the Our web is running in our local server which is hoisting 3000 PORT 
+                                    </li>
+                                    <ul>
+                                        <li>
+                                        Now we can verify the web through this local server before deploy on Server.
+                                        </li>                                   
+                                    </ul>
+                                    <div class="simplelightbox-gallery">
+                                        <a href="assets/images/vscode/vs-11.png">
+                                            <img src="assets/images/vscode/vs-11.png" class="image-doc">
+                                        </a>
+                                    </div>
+                                    </p>
+                                </ol>
+                                <p> After following the above steps you have successfully Run your system in local server. </p>
+                            
+                                <div class="callout-block callout-block-info">
+                                    <div class="content">
+                                        <h4 class="callout-title">
+                                            <span class="callout-icon-holder me-1">
+                                                <svg class="svg-inline--fa fa-info-circle fa-w-16" aria-hidden="true"
+                                                    focusable="false" data-prefix="fas" data-icon="info-circle" role="img"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+                                                    </path>
+                                                </svg>
+
+                                            </span>
+                                            Note
+                                        </h4>
+                                        <p>In order to VPS and NGINX Based System, you have to setup the code using commands
+                                            and .htaccess file based on your server.</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </header>
+                    </article>
+
+                <!-- Deployment -->
+                    <article class="docs-article" id="section-4">
+                        <header class="docs-header">
+                            <h1 class="docs-heading">Deployment</h1>
+                            <section class="docs-intro">
+                                <p>Our e-shop web supports two types of deployment methods: Standard Build and VPS Hosting</p>
+                    
+                                <section class="docs-intro" id="item-11-1">
+                                    <h2 class="section-heading">Initial Setup</h2>
+                                    <p>Before deploying, configure your environment settings:</p>
+                                </section>
+                                <section class="docs-intro" id="item-11-2">
+                                     <div class="deployment-method standard-build">
+                                        <h3>Method 1: Standard Build Deployment</h3>
+                                        <div class="deployment-methods">
+                                            <h3>Environment Configuration</h3>
+                                            <pre><code>.env file configuration:   
+                                             NEXT_PUBLIC_SSR="false" // Standard Build Method [ Method 1 ]</code></pre>
+                                        </div>    
+                                        <ol>
+                                            <li>
+                                                <strong>Automated FTP Deployment:</strong>
+                                                <ol>
+                                                    <li>
+                                                        Ensure the file <code>ftp.js</code> exists in the project root with the following contents:
+                                                        <pre>
+                                                        <code>
+                                                            var config = {
+                                                                host: "xxxxxxxxxxxxxxxxxx",
+                                                                user: "xxxxxxxxxxxxxxxxxxxx",
+                                                                password: "xxxxxxxxxxxxxxxxxxx",
+                                                                port: 21, // change this to 22 or anything else only if you are using SFTP or something else
+                                                                localRoot: __dirname + "/build",
+                                                                remoteRoot: "/",
+                                                                include: ["*", ".htaccess"],
+                                                                exclude: ["images/**"],
+                                                                deleteRemote: false,
+                                                          };
+                                                        </code></pre>
+                                                    </li>
+
+                                                    <li>
+                                                      Fill the File with details                                                      
+                                                    </li>
+                                                    <li>
+                                                       After Fill the details  Run the following command to deploy:
+                                                        <pre><code>npm run deploy</code></pre>
+
+                                                    </li>
+                                                    <ul>   
+                                                      <li>This will take around <strong>5-10  minutes</strong> to deploy after this you see in terminal following message </li>
+                                                    </ul>      
+                                                    
+
+                                              
+
+                                                     <li>
+                                                        After this command you can see the this following message in your Terminal
+                                                        <div class="simplelightbox-gallery">
+                                                            <a href="assets/images/vscode/vs-12.png">
+                                                                <img src="assets/images/vscode/vs-12.png" class="image-doc">
+                                                            </a>
+                                                        </div>
+                                                      </li>
+
+
+                                                      <li>
+                                                       After Deployment check your web Domain:- http://YOUR_DOMAIN/
+                                                      </li><ul>
+                                                    <li>we have now Successfully deployed our web on server.</li></ul> 
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                        <div class="callout-block callout-block-info">
+                                            <div class="content">
+                                                <h4 class="callout-title">
+                                                    <span class="callout-icon-holder me-1">
+                                                        <svg class="svg-inline--fa fa-info-circle fa-w-16" aria-hidden="true"
+                                                            focusable="false" data-prefix="fas" data-icon="info-circle" role="img"
+                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                                            data-fa-i2svg="">
+                                                            <path fill="currentColor"
+                                                                d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+                                                            </path>
+                                                        </svg>
+        
+                                                    </span>
+                                                    Note
+                                                </h4>
+                                                <p>If you are getting error that means there are something mismatch in Ftp details. for that case we can follow this following steps to deploy the web.</p>
+                                            </div>
+                                        </div>
+                                        <ol>
+                                            <li>Run <code>npm run deploy</code> command.</li>
+                                            <ol> After this command you will get <strong>dist</strong> name folder. </ol>
+                                            <li>open your server directory, in that open your web domain directory.</li>
+                                            <li>In that directory Folder, Paste <code>dist</code>  folder's All files and Folder. [ Manual Way without needing of FTP ]</li>
+                                            <ul><li><code> Make sure only paste files & folder which are located in dist named folder , not whole project's files & Folder</code></li></ul>
+
+
+                                        </ol>
+                                    </div>
+                                </section>
+
+                                <section class="docs-intro" id="item-11-3">
+                                    <div class="deployment-method vps-hosting">
+                                        <h3>Method 2: VPS Hosting Deployment</h3>
+                                        <ol>
+                                            <li>
+                                                <strong>Prerequisites:</strong>
+                                                <ul>
+                                                    <li>VPS with root access</li>
+                                                    <li>Ubuntu 20.04 or later</li>
+                                                    <li>Node.js installed</li>
+                                                    <li>Apache (Recommended)</li>
+                                                    <li>PM2 process manager</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <strong>Server Preparation:</strong>
+                                                <pre><code># Update system packages
+                                                    sudo apt update
+                                                    sudo apt upgrade -y
+                                                    
+                                                    # Install Node.js and npm
+                                                    curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+                                                    sudo apt-get install -y nodejs
+                                                    
+                                                    # Install PM2 globally
+                                                    sudo npm install -g pm2</code></pre>
+                                            </li>
+                                            <li>
+                                                <strong>Project Deployment:</strong>
+                                                <pre><code># Upload the eshop project folder to your VPS manually
+                                # Example: Place it in /home/eshop directory
+                                                
+                                # Navigate to the project directory
+                                cd /home/eshop
+                                
+                                # Install dependencies
+                                npm install
+                                
+                                # Build the project (if applicable)
+                                npm run build
+                                
+                                # Start with PM2
+                                pm2 start npm --name "eshop" -- start
+                                
+                                # Ensure PM2 restarts automatically
+                                pm2 startup
+                                pm2 save</code></pre>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </section>
+                                
+                    
+                                    <div class="troubleshooting">
+                                        <h3>Troubleshooting</h3>
+                                        <ul>
+                                            <li>Check PM2 logs: <code>pm2 logs eshop</code></li>
+                                            <li>Restart application: <code>pm2 restart eshop</code></li>
+                                            <li>View running processes: <code>pm2 list</code></li>
+                                        </ul>
+                                    </div>
+                               
+                            </section>
+                        </header>
+                    </article>
+
+              
+       
+
+                <!-- System configuration -->
+                <article class="docs-article" id="section-5">
+                    <header class="docs-header">
+                        <h1 class="docs-heading">System configuration</h1>
+                        <section class="docs-intro" id="item-6-1">
+                            <h2 class="section-heading">Theme Config</h2>
+                            <p>In Your project hierarchy there are <code>tailwind.config.js</code> file. </p>
+                            <ol>
+                                <div class="simplelightbox-gallery">
+                                    <a href="assets/images/vscode/vs-13.png">
+                                        <!-- media -->
+                                        <img src="assets/images/vscode/vs-13.png" class="image-doc" alt="">
+                                    </a>
+                                </div>
+                            </ol>              
+                            <ul>
+                                <li>In that, we can see our theme configuration in the <code>theme</code> section, where we can see <code>light</code> and <code>dark</code> themes. We can modify them with the desired color scheme.</li>
+                                <li>Also, we can see other configurations like <code>fontFamily</code>, <code>boxShadow</code>, <code>Radius</code>, <code>fontWeight</code>, etc.</li>
+                            </ul>
+                            
+
+
+                           
+                        </section>
+                        <section class="docs-intro" id="item-6-2">
+                            <h2 class="section-heading">Create your own Language</h2>
+                            <p>In our E-shop , we can Provide <code> English | Hindi | Arabic</code> default. If you want to Add more Language then you can also add your own language</p>
+                            <p>For that Follow steps below:-</p>
+                            <ol>
+                                <li>
+                                    Open the Folder Located in <code>Public/locales</code>
+                                </li>          
+                                <div class="simplelightbox-gallery">
+                                    <a href="assets/images/vscode/vs-14.png">
+                                        <!-- media -->
+                                        <img src="assets/images/vscode/vs-14.png" class="image-doc" alt="">
+                                    </a>
+                                </div>
+                                <li>
+                                    Create your language's Own file , like Example:- For french use Name <code>fr.json</code> 
+                                </li>  
+                                <li>
+                                    In that file, Fill the keyWords we have just update values not keys: [ see in this Arabic example ]
+                                </li> 
+                                <div class="simplelightbox-gallery">
+                                    <a href="assets/images/vscode/vs-15.png">
+                                        <!-- media -->
+                                        <img src="assets/images/vscode/vs-15.png" class="image-doc" alt="">
+                                    </a>
+                                </div>
+
+
+                                <li>
+                                   After that open file <code>i18.js</code>
+                                </li> 
+                                <div class="simplelightbox-gallery">
+                                    <a href="assets/images/vscode/vs-16.png">
+                                        <!-- media -->
+                                        <img src="assets/images/vscode/vs-16.png" class="image-doc" alt="">
+                                    </a>
+                                </div>
+                                <li>in this above file see resources snipped , in that add your language as per other languages norm.</li>
+
+
+                                <li>
+                                    After that Open File <code> LanguageSwitcher.jsx </code> which is located in <code>src/components/LanguageSwitcher.jsx</code>
+                                 </li> 
+                                 <div class="simplelightbox-gallery">
+                                     <a href="assets/images/vscode/vs-17.png">
+                                         <!-- media -->
+                                         <img src="assets/images/vscode/vs-17.png" class="image-doc" alt="">
+                                     </a>
+                                 </div>
+                                 <li>In that see languages Array , so add your language's object in that fill. <pre><code>
+                                    {
+                                        code:"YOUR_LANGUAGE_CODE",
+                                        countryCode:"YOUR_LANGUAGE_COUNTRY_CODE"  [ example:- french origin is France],
+                                        name:"YOUR_LANGUAGE_NAME",
+                                        flag:"FLAG_CODE"
+                                    }
+                                 </code></pre></li>
+                                 <li>save the files and see the results.</li>
+                            </ol>
+                        </section>           
+                    </header>
+                </article>
+                     
+                <!-- Pages Info -->
+                <article class="docs-article" id="section-6">
+                    <header class="docs-header">
+                        <h1 class="docs-heading">Pages Info</h1>
+                        <section class="docs-intro">
+                            <p>Information about all Pages in eshop</p>
+                        </section>
+                    </header>
+            
+                    <!-- Primary Navigation -->
+                    <li class="nav-item">HomePage -> <code>src/pages/index.js</code></li>
+                    <li class="nav-item">Products -> <code>src/pages/products/index.js</code></li>
+                    <li class="nav-item">Categories -> <code>src/pages/categories/index.js</code></li>
+                    <li class="nav-item">Cart -> <code>src/pages/cart</code></li>
+                    <li class="nav-item">Offers -> <code>src/pages/offers</code></li>
+                    <li class="nav-item">Brands -> <code>src/pages/brands</code></li>
+                    <li class="nav-item">Sellers -> <code>src/pages/sellers</code></li>
+                    <li class="nav-item">Blogs -> <code>src/pages/blogs/index.js</code></li>
+                    
+                    <!-- User Account and Dashboard -->
+                    <li class="nav-item">My Profile -> <code>src/pages/dashboard/my-profile/index.js</code></li>
+                    <li class="nav-item">Orders -> <code>src/pages/dashboard/orders/index.js</code></li>
+                    <li class="nav-item">Favorites -> <code>src/pages/dashboard/favorites/index.js</code></li>
+                    <li class="nav-item">Notifications -> <code>src/pages/notifications/index.js</code></li>
+                    <li class="nav-item">Refer & Earn -> <code>src/pages/dashboard/refer-and-earn/index.js</code></li>
+                    <li class="nav-item">Address -> <code>src/pages/dashboard/address</code></li>
+                    <li class="nav-item">Transactions -> <code>src/pages/dashboard/transactions/index.js</code></li>
+                    <li class="nav-item">Support Tickets -> <code>src/pages/dashboard/support-tickets/index.js</code></li>
+                    <li class="nav-item">Chat -> <code>src/pages/dashboard/chat</code></li>
+                    
+                    <!-- Information and Policies -->
+                    <li class="nav-item">About us -> <code>src/pages/about-us</code></li>
+                    <li class="nav-item">FAQ -> <code>src/pages/faq</code></li>
+                    <li class="nav-item">Terms & Conditions -> <code>src/pages/terms-and-conditions/index.js</code></li>
+                    <li class="nav-item">Privacy Policy -> <code>src/pages/privacy-policy/index.js</code></li>
+                    <li class="nav-item">Shipping Policy -> <code>src/pages/shipping-policy/index.js</code></li>
+                    <li class="nav-item">Return Policy -> <code>src/pages/return-policy/index.js</code></li>                           
+                </article>
+                
+
+                <!-- Support -->
+                <article class="docs-article" id="section-7">
+                    <header class="docs-header">
+                        <h1 class="docs-heading">Support</h1>
+                        <section class="docs-intro">
+                            <p>
+                                If you are facing any technical issues or challanges while using our system. You can
+                                contact us on skype.
+                                We are available for technical support from <strong> 9.00AM to 6.00PM Indian Standard
+                                    Time Monday
+                                    to Friday </strong>.
+                            </p>
+                            <h3>For Web or backend related issues contact here, </h3>
+                            <a href='skype:live:.cid.17fff16de2727085'>Drop a Message on Skype</a> or Search this ID on
+                            Skype :.cid.17fff16de2727085
+                            <br>
+                            <h3>And for mobile application related issues contact here, </h3>
+                            <a href='skype:live:harishvekariya100'>Drop a Message on Skype</a> or Search this ID on
+                            Skype :harishvekariya100
+                        </section>
+                    </header>
+                </article>
+
+                <footer class="footer">
+                    <div class="container text-center py-5">
+                        <small class="copyright">Made with <3 by <a href="https://infinitietech.com/" target="_blank">
+                                Infinitietech</a></small><br>
+                        <small class="copyright">Thanks to <a href="https://themes.3rdwavemedia.com/"
+                                target="_blank">3rd Wave Media</a> for the elegant documentation template.</small>
+                        <!--//social-list-->
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script>
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+    <script src="assets/js/docs.js"></script>
+
+</body>
+</html>
